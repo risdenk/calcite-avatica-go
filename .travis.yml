@@ -17,6 +17,7 @@
 # limitations under the License.
 #
 language: go
+go_import_path: github.com/apache/calcite-avatica-go
 
 branches:
   only:
