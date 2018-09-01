@@ -2,75 +2,96 @@
 
 
 [[projects]]
+  digest = "1:ffc060c551980d37ee9e428ef528ee2813137249ccebb0bfc412ef83071cac91"
   name = "github.com/golang/protobuf"
   packages = ["proto"]
+  pruneopts = "UT"
   revision = "925541529c1fa6821df4e44ce2723319eb2be768"
   version = "v1.0.0"
 
 [[projects]]
   branch = "master"
+  digest = "1:f47d6109c2034cb16bd62b220e18afd5aa9d5a1630fe5d937ad96a4fb7cbb277"
   name = "github.com/hashicorp/go-cleanhttp"
   packages = ["."]
-  revision = "d5fe4b57a186c716b0e00b8c301cbd9b4182694d"
+  pruneopts = "UT"
+  revision = "e8ab9daed8d1ddd2d3c4efba338fe2eeae2e4f18"
 
 [[projects]]
   branch = "master"
+  digest = "1:354978aad16c56c27f57e5b152224806d87902e4935da3b03e18263d82ae77aa"
   name = "github.com/hashicorp/go-uuid"
   packages = ["."]
+  pruneopts = "UT"
   revision = "27454136f0364f2d44b1276c552d69105cf8c498"
 
 [[projects]]
   branch = "master"
+  digest = "1:ae221758bdddd57f5c76f4ee5e4110af32ee62583c46299094697f8f127e63da"
   name = "github.com/jcmturner/gofork"
   packages = [
     "encoding/asn1",
-    "x/crypto/pbkdf2"
+    "x/crypto/pbkdf2",
   ]
+  pruneopts = "UT"
   revision = "2aebee971930cd0dd525873330952ab7df5ac95c"
 
 [[projects]]
   branch = "master"
+  digest = "1:ff6b0586c0621a76832cf783eee58cbb9d9795d2ce8acbc199a4131db11c42a9"
   name = "github.com/satori/go.uuid"
   packages = ["."]
+  pruneopts = "UT"
   revision = "36e9d2ebbde5e3f13ab2e25625fd453271d6522e"
 
 [[projects]]
+  digest = "1:e5d7735120074eee9587d36d5f6452158563602461e7bf8a3b13883ce9f3a7c1"
   name = "github.com/xinsnake/go-http-digest-auth-client"
   packages = ["."]
+  pruneopts = "UT"
   revision = "366760120fe0342664d581b235be4eb08aca8834"
   version = "v0.3.0"
 
 [[projects]]
   branch = "master"
+  digest = "1:706aaf5e43c7dc00fe3fe91015cf8ef07e50736356c8acf924a061ccb1845237"
   name = "golang.org/x/crypto"
   packages = [
     "md4",
-    "pbkdf2"
+    "pbkdf2",
   ]
+  pruneopts = "UT"
   revision = "91a49db82a88618983a78a06c1cbd4e00ab749ab"
 
 [[projects]]
   branch = "master"
+  digest = "1:d6b719875cf8091fbab38527d81d34e71f4521b9ee9ccfbd4a32cff2ac5af96e"
   name = "golang.org/x/net"
   packages = [
     "context",
-    "context/ctxhttp"
+    "context/ctxhttp",
   ]
+  pruneopts = "UT"
   revision = "22ae77b79946ea320088417e4d50825671d82d57"
 
 [[projects]]
+  digest = "1:c902038ee2d6f964d3b9f2c718126571410c5d81251cbab9fe58abd37803513c"
   name = "gopkg.in/jcmturner/aescts.v1"
   packages = ["."]
+  pruneopts = "UT"
   revision = "f6abebb3171c4c1b1fea279cb7c7325020a26290"
   version = "v1.0.1"
 
 [[projects]]
+  digest = "1:a1a3e185c03d79a7452d5d5b4c91be4cc433f55e6ed3a35233d852c966e39013"
   name = "gopkg.in/jcmturner/dnsutils.v1"
   packages = ["."]
+  pruneopts = "UT"
   revision = "13eeb8d49ffb74d7a75784c35e4d900607a3943c"
   version = "v1.0.1"
 
 [[projects]]
+  digest = "1:e815ef48833af820446eb39889a02913c99dd2787b664ad156c0d36dbf4efd67"
   name = "gopkg.in/jcmturner/gokrb5.v4"
   packages = [
     "asn1tools",
@@ -103,14 +124,60 @@
     "mstypes",
     "ndr",
     "pac",
-    "types"
+    "types",
   ]
+  pruneopts = "UT"
   revision = "4f6bed961aa8e808136b8fd9de87cf47d3a77050"
   version = "v4.1.1"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "d5adc65c05f3950e5e2358e02a101c34711c2145a417eb9f61ca96b10c0df7dc"
+  input-imports = [
+    "github.com/golang/protobuf/proto",
+    "github.com/hashicorp/go-cleanhttp",
+    "github.com/hashicorp/go-uuid",
+    "github.com/jcmturner/gofork/encoding/asn1",
+    "github.com/jcmturner/gofork/x/crypto/pbkdf2",
+    "github.com/satori/go.uuid",
+    "github.com/xinsnake/go-http-digest-auth-client",
+    "golang.org/x/crypto/md4",
+    "golang.org/x/crypto/pbkdf2",
+    "golang.org/x/net/context",
+    "golang.org/x/net/context/ctxhttp",
+    "gopkg.in/jcmturner/aescts.v1",
+    "gopkg.in/jcmturner/dnsutils.v1",
+    "gopkg.in/jcmturner/gokrb5.v4/asn1tools",
+    "gopkg.in/jcmturner/gokrb5.v4/client",
+    "gopkg.in/jcmturner/gokrb5.v4/config",
+    "gopkg.in/jcmturner/gokrb5.v4/credentials",
+    "gopkg.in/jcmturner/gokrb5.v4/crypto",
+    "gopkg.in/jcmturner/gokrb5.v4/crypto/common",
+    "gopkg.in/jcmturner/gokrb5.v4/crypto/etype",
+    "gopkg.in/jcmturner/gokrb5.v4/crypto/rfc3961",
+    "gopkg.in/jcmturner/gokrb5.v4/crypto/rfc3962",
+    "gopkg.in/jcmturner/gokrb5.v4/crypto/rfc4757",
+    "gopkg.in/jcmturner/gokrb5.v4/crypto/rfc8009",
+    "gopkg.in/jcmturner/gokrb5.v4/gssapi",
+    "gopkg.in/jcmturner/gokrb5.v4/iana",
+    "gopkg.in/jcmturner/gokrb5.v4/iana/addrtype",
+    "gopkg.in/jcmturner/gokrb5.v4/iana/adtype",
+    "gopkg.in/jcmturner/gokrb5.v4/iana/asnAppTag",
+    "gopkg.in/jcmturner/gokrb5.v4/iana/chksumtype",
+    "gopkg.in/jcmturner/gokrb5.v4/iana/errorcode",
+    "gopkg.in/jcmturner/gokrb5.v4/iana/etypeID",
+    "gopkg.in/jcmturner/gokrb5.v4/iana/flags",
+    "gopkg.in/jcmturner/gokrb5.v4/iana/keyusage",
+    "gopkg.in/jcmturner/gokrb5.v4/iana/msgtype",
+    "gopkg.in/jcmturner/gokrb5.v4/iana/nametype",
+    "gopkg.in/jcmturner/gokrb5.v4/iana/patype",
+    "gopkg.in/jcmturner/gokrb5.v4/keytab",
+    "gopkg.in/jcmturner/gokrb5.v4/krberror",
+    "gopkg.in/jcmturner/gokrb5.v4/messages",
+    "gopkg.in/jcmturner/gokrb5.v4/mstypes",
+    "gopkg.in/jcmturner/gokrb5.v4/ndr",
+    "gopkg.in/jcmturner/gokrb5.v4/pac",
+    "gopkg.in/jcmturner/gokrb5.v4/types",
+  ]
   solver-name = "gps-cdcl"
   solver-version = 1
