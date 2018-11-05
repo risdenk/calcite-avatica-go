@@ -64,7 +64,7 @@
   version = "v1.0.1"
 
 [[projects]]
-  digest = "1:310dfc2c375c2bd4cfcf0e0603403ac8a5d9448116ade9309c691c54f78ac9df"
+  digest = "1:93174b1b000e2f39d0ac02049eca027c15775c32ee399084dce0ea6eb3d933eb"
   name = "gopkg.in/jcmturner/gokrb5.v6"
   packages = [
     "asn1tools",
@@ -99,8 +99,8 @@
     "types",
   ]
   pruneopts = "UT"
-  revision = "c01bd1a96a4147499899e47bfba0d8482f42dcd0"
-  version = "v6.0.1"
+  revision = "104a6401d0b922a6c697dfe27c67ebf4fb9c8a16"
+  version = "v6.0.3"
 
 [[projects]]
   digest = "1:0f16d9c577198e3b8d3209f5a89aabe679525b2aba2a7548714e973035c0e232"
