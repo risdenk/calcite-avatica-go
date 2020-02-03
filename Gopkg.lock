@@ -29,12 +29,12 @@
   revision = "2aebee971930cd0dd525873330952ab7df5ac95c"
 
 [[projects]]
-  digest = "1:220454f22582ee261c09b310a14e6979886069808a696005c5ca998f80eca0cf"
+  digest = "1:8e5de06fa11db4c64a06b45745f61013bb68dec015109e38b99e0aaba09ec724"
   name = "github.com/xinsnake/go-http-digest-auth-client"
   packages = ["."]
   pruneopts = "UT"
-  revision = "9da83de55d71220f00cbffb736dba373e6e683b1"
-  version = "v0.4.0"
+  revision = "33b88a70a26f6551150536db03d2bec28a00891a"
+  version = "0.5.0"
 
 [[projects]]
   branch = "master"
